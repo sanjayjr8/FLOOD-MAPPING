@@ -20,15 +20,24 @@ State-of-the-art deep learning models for flood mapping are powerful but flawed.
 
 In the real world, this is a major risk. A model can be **confidently wrong** about a wet road or a building's shadow, leading to flawed decision-making during a crisis.
 
-<div align="center">
-  <img src="https://storage.googleapis.com/maker-media-experiment/20240509_105436_531604_sanjay_j_0.jpg" alt="Problem Statement" width="700"/>
-</div>
-
 ---
 
-## ✨ Our Solution: From Prediction to Insight
 
+## ✨ Our Solution: From Prediction to Insight
 Our work introduces a **Bayesian U-Net** that moves beyond simple prediction to provide **actionable insight**. By leveraging Monte Carlo Dropout, our model performs multiple stochastic forward passes to approximate its own uncertainty.
+
+
+<div align="center">
+  <img width="624" height="553" alt="image" src="https://github.com/user-attachments/assets/c6d9035d-f414-46b2-8ec3-f7422686e43f" />
+
+
+</div>
+
+
+
+
+
+
 
 The result is a dual-output system:
 1.  **A high-accuracy Flood Map** (the mean of all predictions).
@@ -37,7 +46,8 @@ The result is a dual-output system:
 This transforms the model from a black box into a transparent, trustworthy decision-support tool.
 
 <div align="center">
-  <img src="https://storage.googleapis.com/maker-media-experiment/20240509_110129_023476_sanjay_j_0.jpg" alt="Methodology" width="800"/>
+  <img width="663" height="618" alt="image" src="https://github.com/user-attachments/assets/b48bec62-63a6-4524-82e9-75499f4539e4" />
+
 </div>
 
 ---
@@ -67,8 +77,10 @@ The model achieved a strong proof-of-concept performance, demonstrating its capa
 The training history below shows stable learning and indicates that performance can be further improved with extended training.
 
 <p align="center">
-  <img src="https://i.imgur.com/your_loss_plot_url.png" alt="Loss vs Epochs" width="48%">
-  <img src="https://i.imgur.com/your_iou_plot_url.png" alt="IoU vs Epochs" width="48%">
+  <img width="668" height="375" alt="image" src="https://github.com/user-attachments/assets/f844d3c0-765f-4fa5-bac6-bd09cdec7726" />
+
+ <img width="670" height="391" alt="image" src="https://github.com/user-attachments/assets/beb35727-1654-4a6f-876b-5037c6998c06" />
+
 </p>
 *(Note: Replace the placeholder URLs with actual images of your plots.)*
 
@@ -77,7 +89,8 @@ The training history below shows stable learning and indicates that performance 
 Visual analysis confirms the model's dual capabilities. The uncertainty maps consistently highlight the most challenging regions, such as flood boundaries, noisy areas, and complex terrain.
 
 <div align="center">
-  <img src="https://i.imgur.com/your_results_grid_url.png" alt="Qualitative Results" width="800"/>
+  <img width="652" height="525" alt="image" src="https://github.com/user-attachments/assets/6beaee16-6016-4d65-b8d4-7b0d807c4d56" />
+
 </div>
 *(Note: Replace the placeholder URL with the 4-panel image from your paper.)*
 
